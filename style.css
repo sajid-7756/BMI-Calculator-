@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .main {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    position: fixed;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+  
+  label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    color: #555;
+    font-weight: 500;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #6c63ff;
+  }
+  
+  .btn {
+    width: 100%;
+    padding: 12px;
+    margin: 1.5rem 0;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn:hover {
+    background: #5a52e0;
+    transform: translateY(-2px);
+  }
+  
+  .btn:active {
+    transform: translateY(0);
+  }
+  
+  .result,
+  .info {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  
+  .result h4,
+  .info h4 {
+    color: #6c63ff;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+  }
+  
+  .score {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .info {
+    position: relative;
+  }
+  
+  
+  .info p {
+    margin: 0.5rem 0;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 480px) {
+    .main {
+      padding: 1.5rem;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  span {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    position: absolute;
+    left: 8px; 
+  }
+  
+  #Underweight { background: #f6e58d; color: #f6e58d; }
+  #Healthy-Weight { background: #badc58; color: #badc58; }
+  #Overweight { background: #ff7979; color: #ff7979; }
+  #Obese { background: #eb4d4b; color: #eb4d4b; }
+  
